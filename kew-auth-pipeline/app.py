@@ -264,11 +264,6 @@ def create_app():
 
     with gr.Blocks(
         title="Kew Authentication Pipeline",
-        css=CUSTOM_CSS,
-        theme=gr.themes.Soft(
-            primary_hue=gr.themes.colors.green,
-            secondary_hue=gr.themes.colors.emerald,
-        )
     ) as app:
 
         gr.HTML("""
@@ -322,7 +317,6 @@ def create_app():
                     lines=18,
                     max_lines=30,
                     interactive=False,
-                    show_copy_button=True
                 )
 
                 gr.Markdown("### Compound Results (Top 15 by Cosine Score)")
@@ -405,5 +399,10 @@ if __name__ == "__main__":
         server_name="0.0.0.0",
         server_port=7860,
         share=False,
-        show_error=True
+        show_error=True,
+        css=CUSTOM_CSS,
+        theme=gr.themes.Soft(
+            primary_hue=gr.themes.colors.green,
+            secondary_hue=gr.themes.colors.emerald,
+        ),
     )
