@@ -1,0 +1,14 @@
+matchms>=0.18.0
+ms2deepscore>=0.5.0
+ms2query>=1.4.0
+gradio>=4.0.0
+python-docx>=1.1.0
+pyopenms>=3.0.0
+requests>=2.31.0
+pandas>=2.0.0
+numpy>=1.24.0
+pubchempy>=1.0.4
+lxml>=4.9.0
+scipy>=1.11.0
+matplotlib>=3.7.0
+Pillow>=10.0.0
