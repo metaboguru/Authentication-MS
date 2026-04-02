@@ -1,0 +1,14 @@
+# Pipeline output data (generated at runtime)
+kew-auth-pipeline/data/output/*
+kew-auth-pipeline/data/input/*
+kew-auth-pipeline/data/reference/*
+
+# Keep the directories via .gitkeep
+!kew-auth-pipeline/data/output/.gitkeep
+!kew-auth-pipeline/data/input/.gitkeep
+!kew-auth-pipeline/data/reference/.gitkeep
+
+# Spectral libraries (too large for git)
+kew-auth-pipeline/libraries/*.mgf
+kew-auth-pipeline/libraries/*.pt
+kew-auth-pipeline/libraries/ms2query/
